@@ -1,0 +1,13 @@
+<h1>Queries</h1>
+
+Our tracker has <%= Query.public_count %> queries and counting!
+
+<ul>
+  <% @queries.each do |query| %>
+    <li>
+    <%= link_to query.title, query %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Query", new_query_path %>
