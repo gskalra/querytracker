@@ -45,6 +45,6 @@ class QueriesController < ApplicationController
 
   private
     def query_params
-      params.require(:query).permit(:title, :body, :status)
+      params.require(:query).permit(:title, :body, :category_id, :status)
     end
 end
